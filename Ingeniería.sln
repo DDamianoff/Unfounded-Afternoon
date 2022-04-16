@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ingeniería.Forms", "Ingeniería.Forms\Ingeniería.Forms.csproj", "{D294316D-D5FA-4EC9-A803-80539746D9CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ingeniería.Backend", "Ingeniería.Backend\Ingeniería.Backend.csproj", "{FD9AFE2F-BFA2-4456-9100-16EC752E73D2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D294316D-D5FA-4EC9-A803-80539746D9CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D294316D-D5FA-4EC9-A803-80539746D9CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D294316D-D5FA-4EC9-A803-80539746D9CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D294316D-D5FA-4EC9-A803-80539746D9CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD9AFE2F-BFA2-4456-9100-16EC752E73D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD9AFE2F-BFA2-4456-9100-16EC752E73D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD9AFE2F-BFA2-4456-9100-16EC752E73D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD9AFE2F-BFA2-4456-9100-16EC752E73D2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
