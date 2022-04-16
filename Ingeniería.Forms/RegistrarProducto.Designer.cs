@@ -39,12 +39,12 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.txtCodProducto = new System.Windows.Forms.TextBox();
-            this.txtCategoria = new System.Windows.Forms.TextBox();
-            this.txtMarca = new System.Windows.Forms.TextBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.txtDescripcionProducto = new System.Windows.Forms.TextBox();
             this.txtProducto = new System.Windows.Forms.TextBox();
             this.txtStock = new System.Windows.Forms.TextBox();
+            this.cboCategoria = new System.Windows.Forms.ComboBox();
+            this.cboMarca = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.SuspendLayout();
@@ -106,13 +106,13 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.cboMarca);
+            this.groupBox3.Controls.Add(this.cboCategoria);
             this.groupBox3.Controls.Add(this.label2);
             this.groupBox3.Controls.Add(this.label13);
             this.groupBox3.Controls.Add(this.label6);
             this.groupBox3.Controls.Add(this.label14);
-            this.groupBox3.Controls.Add(this.txtCategoria);
             this.groupBox3.Controls.Add(this.txtNombre);
-            this.groupBox3.Controls.Add(this.txtMarca);
             this.groupBox3.Controls.Add(this.txtCodProducto);
             this.groupBox3.Location = new System.Drawing.Point(20, 88);
             this.groupBox3.Name = "groupBox3";
@@ -169,22 +169,6 @@
             this.txtCodProducto.Size = new System.Drawing.Size(94, 29);
             this.txtCodProducto.TabIndex = 6;
             // 
-            // txtCategoria
-            // 
-            this.txtCategoria.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.txtCategoria.Location = new System.Drawing.Point(115, 69);
-            this.txtCategoria.Name = "txtCategoria";
-            this.txtCategoria.Size = new System.Drawing.Size(128, 29);
-            this.txtCategoria.TabIndex = 6;
-            // 
-            // txtMarca
-            // 
-            this.txtMarca.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.txtMarca.Location = new System.Drawing.Point(375, 28);
-            this.txtMarca.Name = "txtMarca";
-            this.txtMarca.Size = new System.Drawing.Size(94, 29);
-            this.txtMarca.TabIndex = 6;
-            // 
             // txtNombre
             // 
             this.txtNombre.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
@@ -216,6 +200,24 @@
             this.txtStock.Name = "txtStock";
             this.txtStock.Size = new System.Drawing.Size(109, 29);
             this.txtStock.TabIndex = 6;
+            // 
+            // cboCategoria
+            // 
+            this.cboCategoria.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.cboCategoria.FormattingEnabled = true;
+            this.cboCategoria.Location = new System.Drawing.Point(122, 69);
+            this.cboCategoria.Name = "cboCategoria";
+            this.cboCategoria.Size = new System.Drawing.Size(121, 29);
+            this.cboCategoria.TabIndex = 13;
+            // 
+            // cboMarca
+            // 
+            this.cboMarca.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.cboMarca.FormattingEnabled = true;
+            this.cboMarca.Location = new System.Drawing.Point(358, 28);
+            this.cboMarca.Name = "cboMarca";
+            this.cboMarca.Size = new System.Drawing.Size(111, 29);
+            this.cboMarca.TabIndex = 13;
             // 
             // RegistrarProducto
             // 
@@ -249,9 +251,9 @@
         private Label label13;
         private Label label6;
         private Label label14;
-        private TextBox txtCategoria;
         private TextBox txtNombre;
-        private TextBox txtMarca;
         private TextBox txtCodProducto;
+        private ComboBox cboMarca;
+        private ComboBox cboCategoria;
     }
 }
