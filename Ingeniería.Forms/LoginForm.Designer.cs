@@ -80,6 +80,7 @@ partial class LoginForm
             this.txtContraseña.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.txtContraseña.Location = new System.Drawing.Point(148, 137);
             this.txtContraseña.Name = "txtContraseña";
+            this.txtContraseña.PasswordChar = '*';
             this.txtContraseña.Size = new System.Drawing.Size(265, 29);
             this.txtContraseña.TabIndex = 4;
             // 

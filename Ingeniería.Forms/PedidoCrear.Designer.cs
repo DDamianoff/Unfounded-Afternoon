@@ -32,23 +32,23 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cboEstado = new System.Windows.Forms.ComboBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.cboAuxVenta = new System.Windows.Forms.ComboBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtApellido = new System.Windows.Forms.TextBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label8 = new System.Windows.Forms.Label();
+            this.labelN = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtNombreProducto = new System.Windows.Forms.TextBox();
+            this.txtIDProducto = new System.Windows.Forms.TextBox();
+            this.txtPrecio = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.txtCantidad = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -93,14 +93,14 @@
             this.label5.TabIndex = 2;
             this.label5.Text = "Aux. Venta:";
             // 
-            // comboBox1
+            // cboEstado
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(137, 97);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 29);
-            this.comboBox1.TabIndex = 5;
+            this.cboEstado.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.cboEstado.FormattingEnabled = true;
+            this.cboEstado.Location = new System.Drawing.Point(137, 97);
+            this.cboEstado.Name = "cboEstado";
+            this.cboEstado.Size = new System.Drawing.Size(121, 29);
+            this.cboEstado.TabIndex = 5;
             // 
             // dateTimePicker1
             // 
@@ -111,21 +111,21 @@
             this.dateTimePicker1.Size = new System.Drawing.Size(119, 23);
             this.dateTimePicker1.TabIndex = 7;
             // 
-            // comboBox2
+            // cboAuxVenta
             // 
-            this.comboBox2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(137, 142);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 29);
-            this.comboBox2.TabIndex = 5;
+            this.cboAuxVenta.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.cboAuxVenta.FormattingEnabled = true;
+            this.cboAuxVenta.Location = new System.Drawing.Point(137, 142);
+            this.cboAuxVenta.Name = "cboAuxVenta";
+            this.cboAuxVenta.Size = new System.Drawing.Size(121, 29);
+            this.cboAuxVenta.TabIndex = 5;
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.textBox3);
-            this.groupBox1.Controls.Add(this.textBox2);
+            this.groupBox1.Controls.Add(this.txtApellido);
+            this.groupBox1.Controls.Add(this.txtNombre);
             this.groupBox1.Location = new System.Drawing.Point(21, 197);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(497, 84);
@@ -155,33 +155,33 @@
             this.label6.Text = "Nombre:";
             this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
-            // textBox3
+            // txtApellido
             // 
-            this.textBox3.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.textBox3.Location = new System.Drawing.Point(317, 31);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(156, 29);
-            this.textBox3.TabIndex = 6;
+            this.txtApellido.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txtApellido.Location = new System.Drawing.Point(317, 31);
+            this.txtApellido.Name = "txtApellido";
+            this.txtApellido.Size = new System.Drawing.Size(156, 29);
+            this.txtApellido.TabIndex = 6;
             // 
-            // textBox2
+            // txtNombre
             // 
-            this.textBox2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.textBox2.Location = new System.Drawing.Point(95, 31);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(134, 29);
-            this.textBox2.TabIndex = 6;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.txtNombre.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txtNombre.Location = new System.Drawing.Point(95, 31);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(134, 29);
+            this.txtNombre.TabIndex = 6;
+            this.txtNombre.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.label11);
             this.groupBox2.Controls.Add(this.label10);
-            this.groupBox2.Controls.Add(this.label8);
-            this.groupBox2.Controls.Add(this.textBox7);
-            this.groupBox2.Controls.Add(this.textBox6);
+            this.groupBox2.Controls.Add(this.labelN);
+            this.groupBox2.Controls.Add(this.txtCantidad);
+            this.groupBox2.Controls.Add(this.txtPrecio);
             this.groupBox2.Controls.Add(this.label9);
-            this.groupBox2.Controls.Add(this.textBox4);
-            this.groupBox2.Controls.Add(this.textBox5);
+            this.groupBox2.Controls.Add(this.txtNombreProducto);
+            this.groupBox2.Controls.Add(this.txtIDProducto);
             this.groupBox2.Location = new System.Drawing.Point(21, 298);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(497, 259);
@@ -189,16 +189,16 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Detalle Producto";
             // 
-            // label8
+            // labelN
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label8.Location = new System.Drawing.Point(137, 34);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(143, 21);
-            this.label8.TabIndex = 7;
-            this.label8.Text = "Nombre Producto";
-            this.label8.Click += new System.EventHandler(this.label7_Click);
+            this.labelN.AutoSize = true;
+            this.labelN.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labelN.Location = new System.Drawing.Point(137, 34);
+            this.labelN.Name = "labelN";
+            this.labelN.Size = new System.Drawing.Size(143, 21);
+            this.labelN.TabIndex = 7;
+            this.labelN.Text = "Nombre Producto";
+            this.labelN.Click += new System.EventHandler(this.label7_Click);
             // 
             // label9
             // 
@@ -211,30 +211,30 @@
             this.label9.Text = "IDProducto";
             this.label9.Click += new System.EventHandler(this.label6_Click);
             // 
-            // textBox4
+            // txtNombreProducto
             // 
-            this.textBox4.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.textBox4.Location = new System.Drawing.Point(116, 58);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(183, 29);
-            this.textBox4.TabIndex = 6;
+            this.txtNombreProducto.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txtNombreProducto.Location = new System.Drawing.Point(116, 58);
+            this.txtNombreProducto.Name = "txtNombreProducto";
+            this.txtNombreProducto.Size = new System.Drawing.Size(183, 29);
+            this.txtNombreProducto.TabIndex = 6;
             // 
-            // textBox5
+            // txtIDProducto
             // 
-            this.textBox5.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.textBox5.Location = new System.Drawing.Point(14, 58);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(94, 29);
-            this.textBox5.TabIndex = 6;
-            this.textBox5.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.txtIDProducto.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txtIDProducto.Location = new System.Drawing.Point(14, 58);
+            this.txtIDProducto.Name = "txtIDProducto";
+            this.txtIDProducto.Size = new System.Drawing.Size(94, 29);
+            this.txtIDProducto.TabIndex = 6;
+            this.txtIDProducto.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
-            // textBox6
+            // txtPrecio
             // 
-            this.textBox6.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.textBox6.Location = new System.Drawing.Point(305, 58);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(89, 29);
-            this.textBox6.TabIndex = 6;
+            this.txtPrecio.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txtPrecio.Location = new System.Drawing.Point(305, 58);
+            this.txtPrecio.Name = "txtPrecio";
+            this.txtPrecio.Size = new System.Drawing.Size(89, 29);
+            this.txtPrecio.TabIndex = 6;
             // 
             // label10
             // 
@@ -258,13 +258,13 @@
             this.label11.Text = "Cantidad";
             this.label11.Click += new System.EventHandler(this.label7_Click);
             // 
-            // textBox7
+            // txtCantidad
             // 
-            this.textBox7.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.textBox7.Location = new System.Drawing.Point(400, 58);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(81, 29);
-            this.textBox7.TabIndex = 6;
+            this.txtCantidad.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txtCantidad.Location = new System.Drawing.Point(400, 58);
+            this.txtCantidad.Name = "txtCantidad";
+            this.txtCantidad.Size = new System.Drawing.Size(81, 29);
+            this.txtCantidad.TabIndex = 6;
             // 
             // PedidoCrear
             // 
@@ -273,8 +273,8 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cboAuxVenta);
+            this.Controls.Add(this.cboEstado);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -296,22 +296,22 @@
         private Label label3;
         private Label label4;
         private Label label5;
-        private ComboBox comboBox1;
+        private ComboBox cboEstado;
         private DateTimePicker dateTimePicker1;
-        private ComboBox comboBox2;
+        private ComboBox cboAuxVenta;
         private GroupBox groupBox1;
         private Label label7;
         private Label label6;
-        private TextBox textBox3;
-        private TextBox textBox2;
+        private TextBox txtApellido;
+        private TextBox txtNombre;
         private GroupBox groupBox2;
         private Label label11;
         private Label label10;
-        private Label label8;
-        private TextBox textBox7;
-        private TextBox textBox6;
+        private Label labelN;
+        private TextBox txtCantidad;
+        private TextBox txtPrecio;
         private Label label9;
-        private TextBox textBox4;
-        private TextBox textBox5;
+        private TextBox txtNombreProducto;
+        private TextBox txtIDProducto;
     }
 }
