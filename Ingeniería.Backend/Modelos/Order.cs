@@ -1,8 +1,16 @@
-﻿namespace Ingeniería.Backend.Modelos;
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+namespace Ingeniería.Backend.Modelos;
 
 public class Order
 {
     public int Id
+    {
+        get;
+        set;
+    }
+
+    public int CustomerId
     {
         get;
         set;
@@ -14,21 +22,35 @@ public class Order
         set;
     }
     
-    // TODO: claves foraneas EF
-    public Product Producto
-    {
-        get; 
-        set;
-    }
-    
-    // TODO: claves foraneas EF
-    public Receipt Comprobante
+    public int ProductId
     {
         get;
         set;
     }
     
-    // TODO: INCLUIR ESTADO
+    public ICollection<Product> Producto
+    {
+        get;
+        set;
+    }
+
+    public int ReceiptId
+    {
+        get;
+        set;
+    }
+    
+    public Receipt Comprobante
+    {
+        get;
+        set;
+    }
+
+    public string Estado
+    {
+        get;
+        set;
+    }
 
     public User Vendedor
     {
@@ -41,4 +63,7 @@ public class Order
         get;
         set;
     }
+
+    [NotMapped] public static string Cancelado = nameof(Cancelado);
+    [NotMapped] public static string Íntegro = nameof(Íntegro);
 }

@@ -1,6 +1,6 @@
 ﻿namespace Ingeniería.Backend.Modelos;
 
-public class Customer
+public class Brand
 {
     public int Id
     {
@@ -9,12 +9,6 @@ public class Customer
     }
 
     public string Nombre
-    {
-        get;
-        set;
-    }
-
-    public string Apellido
     {
         get;
         set;

@@ -1,6 +1,6 @@
 ﻿namespace Ingeniería.Backend.Modelos;
 
-public abstract class Person
+public class Category
 {
     public int Id
     {
@@ -8,13 +8,7 @@ public abstract class Person
         set;
     }
 
-    public string Nombre
-    {
-        get;
-        set;
-    }
-
-    public string Apellido
+    public string Marca
     {
         get;
         set;

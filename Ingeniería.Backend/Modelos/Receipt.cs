@@ -1,17 +1,35 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Ingeniería.Backend.Modelos;
 
 public class Receipt
 {
     [Key]
-    public int Ruc
+    [ForeignKey("Order")]
+    public int ReceiptId
     {
         get;
         set;
     }
+    
+    [NotMapped]
+    public int Ruc
+    {
+        get => ReceiptId;
+        set => value = ReceiptId;
+    }
 
-    // TODO: usar las monedas.
+    public int CurrencyId
+    {
+        get;
+        set;
+    }
+    public Currency Moneda
+    {
+        get;
+        set;
+    }
 
     public string Dirección
     {
@@ -20,6 +38,12 @@ public class Receipt
     }
 
     public string RazónSocial
+    {
+        get;
+        set;
+    }
+
+    public Order Order
     {
         get;
         set;

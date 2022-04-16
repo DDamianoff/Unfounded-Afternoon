@@ -23,4 +23,8 @@
       </EmbeddedResource>
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\Ingeniería.Backend\Ingeniería.Backend.csproj" />
+    </ItemGroup>
+
 </Project>
