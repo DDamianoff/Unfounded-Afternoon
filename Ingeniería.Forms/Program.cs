@@ -20,11 +20,10 @@ static class Program
     private static void CreateDb()
     {
         using var db = new SqLiteDbContext();
-        var dbIsGonnaBeCreated = db.Database.EnsureCreated();
-
-        if (!dbIsGonnaBeCreated) 
-            return;
-            
+        db.Database.EnsureDeleted();
+        db.Database.EnsureCreated();
+        
+        #region Añadir algunos usuarios
         db.Usuarios.Add(
             new User()
             {
@@ -33,6 +32,24 @@ static class Program
                 Correo = "juan@mail.com",
                 Contraseña = "juan123",
             });
+        #endregion
+        
+        #region Añadir algunas categorías
+
+        var categorías = new List<Category>()
+        {
+            new() {Categoría = "Periféricos"},
+            new() {Categoría = "Procesadores"},
+            new() {Categoría = "Memorias RAM"},
+            new() {Categoría = "Unidades de estado sólido"},
+            new() {Categoría = "Placa madre"}
+        };
+
+        db.Categorías.AddRange(categorías);
         db.SaveChanges();
+
+        #endregion
+        
+        
     }
 }
