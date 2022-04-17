@@ -32,12 +32,10 @@ public partial class LoginForm : Form
         }
 
         MessageBox.Show("Tu cuenta es incorrecta");
-
-
-
-
     }
 
-    
-
+    private void btnIngresar_Click(object sender, EventArgs e)
+    {
+        validarLogin();
+    }
 }
