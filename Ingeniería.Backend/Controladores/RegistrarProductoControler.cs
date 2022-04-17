@@ -27,7 +27,18 @@ namespace Ingeniería.Backend.Controladores
         {
             using var db = new SqLiteDbContext();
 
-            db.Productos.Add(product);
+            var ProductToSave = new Product()
+            {
+                Categoría = db.Categorías.First(category => category == product.Categoría),
+                Marca = db.Marcas.First(marca => marca == product.Marca),
+                Descripción = product.Descripción,
+                Nombre = product.Nombre,
+                Precio = product.Precio,
+                Stock = product.Stock
+            };
+            
+            
+            db.Productos.Add(ProductToSave);
 
             db.SaveChanges();
         }
