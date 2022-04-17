@@ -3,6 +3,7 @@ using System;
 using Ingeniería.Backend.Modelos;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Ingeniería.Backend.Migrations
 {
     [DbContext(typeof(SqLiteDbContext))]
-    partial class SqLiteDbContextModelSnapshot : ModelSnapshot
+    [Migration("20220417115613_fixedProductTheTrilogy")]
+    partial class fixedProductTheTrilogy
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "7.0.0-preview.3.22175.1");

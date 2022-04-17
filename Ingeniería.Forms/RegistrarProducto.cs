@@ -46,8 +46,13 @@ namespace Ingeniería.Forms
             {
                 Categoría = (Category)cboCategoria.SelectedItem,
                 Marca = (Brand)cboMarca.SelectedItem,
-
+                Nombre = txtNombre.Text,
+                Descripción = txtDescripcionProducto.Text,
+                Precio = (double)nupPrecio.Value,
+                Stock = (int)nupStock.Value
             };
+
+            controler.SaveProductDb(product);
         }
     }
 }

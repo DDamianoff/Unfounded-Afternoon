@@ -34,31 +34,31 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txtDescripcionProducto = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.txtStock = new System.Windows.Forms.TextBox();
-            this.txtProducto = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.cboMarca = new System.Windows.Forms.ComboBox();
             this.cboCategoria = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.txtNombre = new System.Windows.Forms.TextBox();
-            this.txtCodProducto = new System.Windows.Forms.TextBox();
+            this.nupStock = new System.Windows.Forms.NumericUpDown();
+            this.nupPrecio = new System.Windows.Forms.NumericUpDown();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nupStock)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nupPrecio)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.nupPrecio);
+            this.groupBox1.Controls.Add(this.nupStock);
             this.groupBox1.Controls.Add(this.btnGuardar);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.txtDescripcionProducto);
             this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.txtStock);
-            this.groupBox1.Controls.Add(this.txtProducto);
             this.groupBox1.Location = new System.Drawing.Point(19, 199);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(497, 160);
@@ -81,7 +81,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(52, 65);
+            this.label5.Location = new System.Drawing.Point(52, 69);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(153, 25);
             this.label5.TabIndex = 10;
@@ -115,22 +115,6 @@
             this.label4.TabIndex = 11;
             this.label4.Text = "Stock:";
             // 
-            // txtStock
-            // 
-            this.txtStock.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.txtStock.Location = new System.Drawing.Point(211, 103);
-            this.txtStock.Name = "txtStock";
-            this.txtStock.Size = new System.Drawing.Size(109, 29);
-            this.txtStock.TabIndex = 6;
-            // 
-            // txtProducto
-            // 
-            this.txtProducto.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.txtProducto.Location = new System.Drawing.Point(211, 65);
-            this.txtProducto.Name = "txtProducto";
-            this.txtProducto.Size = new System.Drawing.Size(109, 29);
-            this.txtProducto.TabIndex = 6;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -146,11 +130,9 @@
             this.groupBox3.Controls.Add(this.cboMarca);
             this.groupBox3.Controls.Add(this.cboCategoria);
             this.groupBox3.Controls.Add(this.label2);
-            this.groupBox3.Controls.Add(this.label13);
             this.groupBox3.Controls.Add(this.label6);
             this.groupBox3.Controls.Add(this.label14);
             this.groupBox3.Controls.Add(this.txtNombre);
-            this.groupBox3.Controls.Add(this.txtCodProducto);
             this.groupBox3.Location = new System.Drawing.Point(19, 66);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(497, 116);
@@ -173,7 +155,7 @@
             this.cboCategoria.FormattingEnabled = true;
             this.cboCategoria.Location = new System.Drawing.Point(122, 69);
             this.cboCategoria.Name = "cboCategoria";
-            this.cboCategoria.Size = new System.Drawing.Size(121, 29);
+            this.cboCategoria.Size = new System.Drawing.Size(140, 29);
             this.cboCategoria.TabIndex = 13;
             this.cboCategoria.SelectedIndexChanged += new System.EventHandler(this.cboCategoria_SelectedIndexChanged);
             // 
@@ -187,21 +169,11 @@
             this.label2.TabIndex = 12;
             this.label2.Text = "Categoria:";
             // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label13.Location = new System.Drawing.Point(9, 28);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(134, 25);
-            this.label13.TabIndex = 12;
-            this.label13.Text = "Cod Producto:";
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(281, 69);
+            this.label6.Location = new System.Drawing.Point(21, 32);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(88, 25);
             this.label6.TabIndex = 11;
@@ -220,18 +192,28 @@
             // txtNombre
             // 
             this.txtNombre.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.txtNombre.Location = new System.Drawing.Point(375, 69);
+            this.txtNombre.Location = new System.Drawing.Point(122, 32);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(94, 29);
+            this.txtNombre.Size = new System.Drawing.Size(140, 29);
             this.txtNombre.TabIndex = 6;
             // 
-            // txtCodProducto
+            // nupStock
             // 
-            this.txtCodProducto.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.txtCodProducto.Location = new System.Drawing.Point(149, 28);
-            this.txtCodProducto.Name = "txtCodProducto";
-            this.txtCodProducto.Size = new System.Drawing.Size(94, 29);
-            this.txtCodProducto.TabIndex = 6;
+            this.nupStock.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.nupStock.Location = new System.Drawing.Point(211, 104);
+            this.nupStock.Name = "nupStock";
+            this.nupStock.Size = new System.Drawing.Size(109, 29);
+            this.nupStock.TabIndex = 21;
+            // 
+            // nupPrecio
+            // 
+            this.nupPrecio.BackColor = System.Drawing.SystemColors.Window;
+            this.nupPrecio.DecimalPlaces = 2;
+            this.nupPrecio.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.nupPrecio.Location = new System.Drawing.Point(211, 65);
+            this.nupPrecio.Name = "nupPrecio";
+            this.nupPrecio.Size = new System.Drawing.Size(120, 29);
+            this.nupPrecio.TabIndex = 22;
             // 
             // RegistrarProducto
             // 
@@ -247,6 +229,8 @@
             this.groupBox1.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nupStock)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nupPrecio)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -259,17 +243,15 @@
         private Label label3;
         private Label label1;
         private TextBox txtDescripcionProducto;
-        private TextBox txtStock;
-        private TextBox txtProducto;
         private GroupBox groupBox3;
         private Label label2;
-        private Label label13;
         private Label label6;
         private Label label14;
         private TextBox txtNombre;
-        private TextBox txtCodProducto;
         private ComboBox cboMarca;
         private ComboBox cboCategoria;
         private Button btnGuardar;
+        private NumericUpDown nupStock;
+        private NumericUpDown nupPrecio;
     }
 }

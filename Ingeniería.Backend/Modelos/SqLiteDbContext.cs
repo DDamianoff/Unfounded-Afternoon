@@ -36,7 +36,9 @@ public class SqLiteDbContext : DbContext
         
         modelBuilder.Entity<User>().ToTable(nameof(Usuarios));
         modelBuilder.Entity<User>(entity => entity.HasKey(e => e.Id));
-        
+
+        modelBuilder.Entity<Product>().ToTable(nameof(Productos));
+        modelBuilder.Entity<Product>(entity => entity.HasKey(e => e.Id));
 
         base.OnModelCreating(modelBuilder);
     }
@@ -72,6 +74,12 @@ public class SqLiteDbContext : DbContext
         set;
     }
     public DbSet<User> Usuarios
+    {
+        get;
+        set;
+    }
+
+    public DbSet<Product> Productos
     {
         get;
         set;
