@@ -15,7 +15,7 @@ public partial class LoginForm : Form
 
     private void validarLogin()
     {
-        var login = new Ingeniería.Backend.Modelos.Login()
+        var login = new Login()
         {
             Correo = txtCorreo.Text,
             Contraseña = txtContraseña.Text
