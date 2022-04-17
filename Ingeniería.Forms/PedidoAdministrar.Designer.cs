@@ -41,7 +41,7 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(31, 140);
+            this.dataGridView1.Location = new System.Drawing.Point(30, 0);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 25;
             this.dataGridView1.Size = new System.Drawing.Size(467, 150);
@@ -50,7 +50,7 @@
             // btnNuevo
             // 
             this.btnNuevo.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnNuevo.Location = new System.Drawing.Point(31, 313);
+            this.btnNuevo.Location = new System.Drawing.Point(30, 173);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(84, 28);
             this.btnNuevo.TabIndex = 10;
@@ -61,7 +61,7 @@
             // btnModificar
             // 
             this.btnModificar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnModificar.Location = new System.Drawing.Point(121, 313);
+            this.btnModificar.Location = new System.Drawing.Point(120, 173);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(95, 28);
             this.btnModificar.TabIndex = 10;
@@ -72,7 +72,7 @@
             // btnEliminar
             // 
             this.btnEliminar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnEliminar.Location = new System.Drawing.Point(222, 313);
+            this.btnEliminar.Location = new System.Drawing.Point(221, 173);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(84, 28);
             this.btnEliminar.TabIndex = 10;
@@ -83,7 +83,7 @@
             // btnGrabar
             // 
             this.btnGrabar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnGrabar.Location = new System.Drawing.Point(312, 313);
+            this.btnGrabar.Location = new System.Drawing.Point(311, 173);
             this.btnGrabar.Name = "btnGrabar";
             this.btnGrabar.Size = new System.Drawing.Size(84, 28);
             this.btnGrabar.TabIndex = 10;
@@ -94,7 +94,7 @@
             // btnVerDetallePedido
             // 
             this.btnVerDetallePedido.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnVerDetallePedido.Location = new System.Drawing.Point(349, 348);
+            this.btnVerDetallePedido.Location = new System.Drawing.Point(348, 208);
             this.btnVerDetallePedido.Name = "btnVerDetallePedido";
             this.btnVerDetallePedido.Size = new System.Drawing.Size(158, 28);
             this.btnVerDetallePedido.TabIndex = 10;
@@ -105,7 +105,7 @@
             // btnSalir
             // 
             this.btnSalir.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnSalir.Location = new System.Drawing.Point(31, 391);
+            this.btnSalir.Location = new System.Drawing.Point(30, 251);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(68, 28);
             this.btnSalir.TabIndex = 10;
@@ -125,7 +125,7 @@
             this.Controls.Add(this.btnNuevo);
             this.Controls.Add(this.dataGridView1);
             this.Name = "PedidoAdministrar";
-            this.Size = new System.Drawing.Size(543, 437);
+            this.Size = new System.Drawing.Size(543, 283);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 

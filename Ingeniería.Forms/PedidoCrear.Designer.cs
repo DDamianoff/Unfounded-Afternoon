@@ -41,11 +41,11 @@
             this.txtApellido = new System.Windows.Forms.TextBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.cboNombreProducto = new System.Windows.Forms.ComboBox();
+            this.btnAñadir = new System.Windows.Forms.Button();
+            this.listView1 = new System.Windows.Forms.ListView();
             this.labelN = new System.Windows.Forms.Label();
             this.btnGuardar = new System.Windows.Forms.Button();
-            this.listView1 = new System.Windows.Forms.ListView();
-            this.btnAñadir = new System.Windows.Forms.Button();
-            this.cboNombreProducto = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -54,7 +54,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(26, 4);
+            this.label1.Location = new System.Drawing.Point(25, 17);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(169, 30);
             this.label1.TabIndex = 1;
@@ -64,7 +64,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(60, 68);
+            this.label3.Location = new System.Drawing.Point(59, 81);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(74, 25);
             this.label3.TabIndex = 2;
@@ -74,7 +74,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(268, 64);
+            this.label4.Location = new System.Drawing.Point(267, 77);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(130, 25);
             this.label4.TabIndex = 2;
@@ -84,7 +84,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(24, 109);
+            this.label5.Location = new System.Drawing.Point(23, 122);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(110, 25);
             this.label5.TabIndex = 2;
@@ -94,7 +94,7 @@
             // 
             this.cboEstado.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.cboEstado.FormattingEnabled = true;
-            this.cboEstado.Location = new System.Drawing.Point(142, 64);
+            this.cboEstado.Location = new System.Drawing.Point(141, 77);
             this.cboEstado.Name = "cboEstado";
             this.cboEstado.Size = new System.Drawing.Size(121, 29);
             this.cboEstado.TabIndex = 5;
@@ -103,7 +103,7 @@
             // 
             this.dateTimePicker1.CalendarFont = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(404, 66);
+            this.dateTimePicker1.Location = new System.Drawing.Point(403, 79);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(119, 23);
             this.dateTimePicker1.TabIndex = 7;
@@ -112,7 +112,7 @@
             // 
             this.cboAuxVenta.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.cboAuxVenta.FormattingEnabled = true;
-            this.cboAuxVenta.Location = new System.Drawing.Point(142, 109);
+            this.cboAuxVenta.Location = new System.Drawing.Point(141, 122);
             this.cboAuxVenta.Name = "cboAuxVenta";
             this.cboAuxVenta.Size = new System.Drawing.Size(121, 29);
             this.cboAuxVenta.TabIndex = 5;
@@ -123,7 +123,7 @@
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.txtApellido);
             this.groupBox1.Controls.Add(this.txtNombre);
-            this.groupBox1.Location = new System.Drawing.Point(26, 164);
+            this.groupBox1.Location = new System.Drawing.Point(25, 177);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(497, 84);
             this.groupBox1.TabIndex = 8;
@@ -175,12 +175,40 @@
             this.groupBox2.Controls.Add(this.btnAñadir);
             this.groupBox2.Controls.Add(this.listView1);
             this.groupBox2.Controls.Add(this.labelN);
-            this.groupBox2.Location = new System.Drawing.Point(26, 265);
+            this.groupBox2.Location = new System.Drawing.Point(25, 278);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(497, 259);
             this.groupBox2.TabIndex = 8;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Detalle Producto";
+            // 
+            // cboNombreProducto
+            // 
+            this.cboNombreProducto.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.cboNombreProducto.FormattingEnabled = true;
+            this.cboNombreProducto.Location = new System.Drawing.Point(190, 35);
+            this.cboNombreProducto.Name = "cboNombreProducto";
+            this.cboNombreProducto.Size = new System.Drawing.Size(121, 29);
+            this.cboNombreProducto.TabIndex = 12;
+            // 
+            // btnAñadir
+            // 
+            this.btnAñadir.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnAñadir.Location = new System.Drawing.Point(407, 38);
+            this.btnAñadir.Name = "btnAñadir";
+            this.btnAñadir.Size = new System.Drawing.Size(84, 28);
+            this.btnAñadir.TabIndex = 12;
+            this.btnAñadir.Text = "Añadir";
+            this.btnAñadir.UseVisualStyleBackColor = true;
+            this.btnAñadir.Click += new System.EventHandler(this.btnAñadir_Click);
+            // 
+            // listView1
+            // 
+            this.listView1.Location = new System.Drawing.Point(14, 72);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(477, 88);
+            this.listView1.TabIndex = 10;
+            this.listView1.UseCompatibleStateImageBehavior = false;
             // 
             // labelN
             // 
@@ -196,41 +224,13 @@
             // btnGuardar
             // 
             this.btnGuardar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnGuardar.Location = new System.Drawing.Point(439, 245);
+            this.btnGuardar.Location = new System.Drawing.Point(438, 258);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(84, 28);
             this.btnGuardar.TabIndex = 11;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = true;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
-            // 
-            // listView1
-            // 
-            this.listView1.Location = new System.Drawing.Point(14, 72);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(477, 88);
-            this.listView1.TabIndex = 10;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            // 
-            // btnAñadir
-            // 
-            this.btnAñadir.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnAñadir.Location = new System.Drawing.Point(407, 38);
-            this.btnAñadir.Name = "btnAñadir";
-            this.btnAñadir.Size = new System.Drawing.Size(84, 28);
-            this.btnAñadir.TabIndex = 12;
-            this.btnAñadir.Text = "Añadir";
-            this.btnAñadir.UseVisualStyleBackColor = true;
-            this.btnAñadir.Click += new System.EventHandler(this.btnAñadir_Click);
-            // 
-            // cboNombreProducto
-            // 
-            this.cboNombreProducto.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.cboNombreProducto.FormattingEnabled = true;
-            this.cboNombreProducto.Location = new System.Drawing.Point(190, 35);
-            this.cboNombreProducto.Name = "cboNombreProducto";
-            this.cboNombreProducto.Size = new System.Drawing.Size(121, 29);
-            this.cboNombreProducto.TabIndex = 12;
             // 
             // PedidoCrear
             // 
@@ -247,7 +247,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.Name = "PedidoCrear";
-            this.Size = new System.Drawing.Size(560, 570);
+            this.Size = new System.Drawing.Size(542, 570);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
