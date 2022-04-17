@@ -12,11 +12,27 @@ static class Program
     {
         // To customize application configuration such as set high DPI settings or default font,
         // see https://aka.ms/applicationconfiguration.
-        using (var db = new SqLiteDbContext())
-        {
-            db.Database.EnsureCreated();
-        }
+        CreateDb();
         ApplicationConfiguration.Initialize();
         Application.Run(new LoginForm());
+    }
+
+    private static void CreateDb()
+    {
+        using var db = new SqLiteDbContext();
+        var dbIsGonnaBeCreated = db.Database.EnsureCreated();
+
+        if (!dbIsGonnaBeCreated) 
+            return;
+            
+        db.Usuarios.Add(
+            new User()
+            {
+                Apellido = "pepe",
+                Nombre = "Juan",
+                Correo = "juan@mail.com",
+                Contraseña = "juan123",
+            });
+        db.SaveChanges();
     }
 }
