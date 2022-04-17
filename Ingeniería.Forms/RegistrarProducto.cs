@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Ingeniería.Backend.Controladores;
+using Ingeniería.Backend.Modelos;
 
 namespace Ingeniería.Forms
 {
@@ -35,8 +36,18 @@ namespace Ingeniería.Forms
             var AllBrands = controler.GetListBrands();
 
             foreach(var marca in AllBrands)
-                cboCategoria.Items.Add(marca);
+                cboMarca.Items.Add(marca);
         
+        }
+
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
+            var product = new Product()
+            {
+                Categoría = (Category)cboCategoria.SelectedItem,
+                Marca = (Brand)cboMarca.SelectedItem,
+
+            };
         }
     }
 }

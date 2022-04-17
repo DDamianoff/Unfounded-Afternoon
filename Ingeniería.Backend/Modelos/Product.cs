@@ -20,13 +20,25 @@ public class Product
         set;
     }
 
-    public string Marca
+    public int BrandId
+    {
+        get;
+        set;
+    }
+
+    public Brand Marca
     {
         get; 
         set;
     }
 
-    public string Categoría
+    public int CategoryId
+    {
+        get;
+        set;
+    }
+
+    public Category Categoría
     {
         get; 
         set;
