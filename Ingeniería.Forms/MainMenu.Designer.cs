@@ -1,6 +1,6 @@
 ﻿namespace Ingeniería.Forms
 {
-    partial class Login
+    partial class MainMenu
     {
         /// <summary>
         /// Required designer variable.
@@ -30,9 +30,9 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btnFrmRegistrarProducto = new System.Windows.Forms.Button();
             this.btnFrmRegistrarPedido = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
+            this.btnFrmRegistrarProducto = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -58,16 +58,6 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "groupBox1";
             // 
-            // btnFrmRegistrarProducto
-            // 
-            this.btnFrmRegistrarProducto.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnFrmRegistrarProducto.Location = new System.Drawing.Point(48, 106);
-            this.btnFrmRegistrarProducto.Name = "btnFrmRegistrarProducto";
-            this.btnFrmRegistrarProducto.Size = new System.Drawing.Size(475, 42);
-            this.btnFrmRegistrarProducto.TabIndex = 0;
-            this.btnFrmRegistrarProducto.Text = "Formulario Registrar Productos";
-            this.btnFrmRegistrarProducto.UseVisualStyleBackColor = true;
-            // 
             // btnFrmRegistrarPedido
             // 
             this.btnFrmRegistrarPedido.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
@@ -88,6 +78,16 @@
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = true;
             // 
+            // btnFrmRegistrarProducto
+            // 
+            this.btnFrmRegistrarProducto.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnFrmRegistrarProducto.Location = new System.Drawing.Point(48, 106);
+            this.btnFrmRegistrarProducto.Name = "btnFrmRegistrarProducto";
+            this.btnFrmRegistrarProducto.Size = new System.Drawing.Size(475, 42);
+            this.btnFrmRegistrarProducto.TabIndex = 0;
+            this.btnFrmRegistrarProducto.Text = "Formulario Registrar Productos";
+            this.btnFrmRegistrarProducto.UseVisualStyleBackColor = true;
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -97,7 +97,7 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
             this.Name = "Login";
-            this.Text = "Login";
+            this.Text = "+";
             this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
