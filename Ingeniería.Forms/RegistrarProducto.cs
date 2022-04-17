@@ -18,7 +18,7 @@ namespace Ingeniería.Forms
             InitializeComponent();
         }
 
-        public PedidosCrearControler controler = new PedidosCrearControler();
+        public RegistrarProductoControler controler = new RegistrarProductoControler();
 
         private void cboCategoria_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -31,6 +31,12 @@ namespace Ingeniería.Forms
 
             foreach(var categoria in AllCategories)
                 cboCategoria.Items.Add(categoria);
+
+            var AllBrands = controler.GetListBrands();
+
+            foreach(var marca in AllBrands)
+                cboCategoria.Items.Add(marca);
+        
         }
     }
 }

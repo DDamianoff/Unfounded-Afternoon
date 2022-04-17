@@ -45,19 +45,21 @@
             this.label14 = new System.Windows.Forms.Label();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.txtCodProducto = new System.Windows.Forms.TextBox();
+            this.btnGuardar = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btnGuardar);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.txtDescripcionProducto);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.txtStock);
             this.groupBox1.Controls.Add(this.txtProducto);
-            this.groupBox1.Location = new System.Drawing.Point(20, 221);
+            this.groupBox1.Location = new System.Drawing.Point(19, 199);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(497, 160);
             this.groupBox1.TabIndex = 17;
@@ -122,7 +124,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(20, 40);
+            this.label1.Location = new System.Drawing.Point(19, 18);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(226, 30);
             this.label1.TabIndex = 9;
@@ -138,7 +140,7 @@
             this.groupBox3.Controls.Add(this.label14);
             this.groupBox3.Controls.Add(this.txtNombre);
             this.groupBox3.Controls.Add(this.txtCodProducto);
-            this.groupBox3.Location = new System.Drawing.Point(20, 88);
+            this.groupBox3.Location = new System.Drawing.Point(19, 66);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(497, 116);
             this.groupBox3.TabIndex = 17;
@@ -220,6 +222,16 @@
             this.txtCodProducto.Size = new System.Drawing.Size(94, 29);
             this.txtCodProducto.TabIndex = 6;
             // 
+            // btnGuardar
+            // 
+            this.btnGuardar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnGuardar.Location = new System.Drawing.Point(385, 104);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(84, 28);
+            this.btnGuardar.TabIndex = 20;
+            this.btnGuardar.Text = "Guardar";
+            this.btnGuardar.UseVisualStyleBackColor = true;
+            // 
             // RegistrarProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -257,5 +269,6 @@
         private TextBox txtCodProducto;
         private ComboBox cboMarca;
         private ComboBox cboCategoria;
+        private Button btnGuardar;
     }
 }

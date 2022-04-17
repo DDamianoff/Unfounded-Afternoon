@@ -13,4 +13,7 @@ public class Brand
         get;
         set;
     }
+
+    public override string ToString() => $"{Nombre}";
+
 }

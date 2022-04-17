@@ -13,5 +13,6 @@ public class Category
         get;
         set;
     }
-    
+
+    public override string ToString() => $"{Categoría}";
 }

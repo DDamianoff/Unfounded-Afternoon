@@ -32,8 +32,24 @@ static class Program
                 Correo = "juan@mail.com",
                 Contraseña = "juan123",
             });
+        db.Usuarios.Add(
+            new User()
+            {
+                Apellido = "asd",
+                Nombre = "dsa",
+                Correo = "aa",
+                Contraseña = "aa",
+            });
+        db.Usuarios.Add(
+            new User()
+            {
+                Apellido = "Hernandez",
+                Nombre = "Tito",
+                Correo = "tito@mail.com",
+                Contraseña = "tito123",
+            });
         #endregion
-        
+
         #region Añadir algunas categorías
 
         var categorías = new List<Category>()
@@ -49,7 +65,21 @@ static class Program
         db.SaveChanges();
 
         #endregion
-        
-        
+
+        #region Añadir algunas marcas
+
+        var marcas = new List<Brand>()
+        {
+            new() {Nombre = "LogiTech"},
+            new() {Nombre = "Intel"},
+            new() {Nombre = "DDR Tec"},
+            new() {Nombre = "DD ZD"},
+            new() {Nombre = "MotherTB"}
+        };
+
+        db.Marcas.AddRange(marcas);
+        db.SaveChanges();
+
+        #endregion
     }
 }
