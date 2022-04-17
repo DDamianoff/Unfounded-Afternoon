@@ -31,5 +31,15 @@ namespace Ingeniería.Forms
         {
 
         }
+
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAñadir_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

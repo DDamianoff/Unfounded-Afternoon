@@ -59,7 +59,7 @@
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(531, 767);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(531, 790);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
             // panelPedidoCrear
@@ -67,22 +67,23 @@
             this.panelPedidoCrear.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelPedidoCrear.Location = new System.Drawing.Point(3, 3);
             this.panelPedidoCrear.Name = "panelPedidoCrear";
-            this.panelPedidoCrear.Size = new System.Drawing.Size(525, 377);
+            this.panelPedidoCrear.Size = new System.Drawing.Size(525, 389);
             this.panelPedidoCrear.TabIndex = 0;
             // 
             // panelPedidoAdministrar
             // 
             this.panelPedidoAdministrar.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelPedidoAdministrar.Location = new System.Drawing.Point(3, 386);
+            this.panelPedidoAdministrar.Location = new System.Drawing.Point(3, 398);
             this.panelPedidoAdministrar.Name = "panelPedidoAdministrar";
-            this.panelPedidoAdministrar.Size = new System.Drawing.Size(525, 378);
+            this.panelPedidoAdministrar.Size = new System.Drawing.Size(525, 389);
             this.panelPedidoAdministrar.TabIndex = 1;
             // 
             // Pedido
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(531, 799);
+            this.BackColor = System.Drawing.Color.PaleGreen;
+            this.ClientSize = new System.Drawing.Size(531, 822);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.label1);
             this.Name = "Pedido";

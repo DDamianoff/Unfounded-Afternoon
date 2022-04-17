@@ -16,5 +16,37 @@ namespace Ingeniería.Forms
         {
             InitializeComponent();
         }
+
+        private void btnNuevo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnModificar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnGrabar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnVerDetallePedido_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Comprobantes FrmCom = new Comprobantes();
+            FrmCom.Focus();
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

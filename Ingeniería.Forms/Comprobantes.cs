@@ -16,5 +16,10 @@ namespace Ingeniería.Forms
         {
             InitializeComponent();
         }
+
+        private void btnImprimir_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
