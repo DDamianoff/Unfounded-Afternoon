@@ -8,7 +8,7 @@ public class Category
         set;
     }
 
-    public string Marca
+    public string Categoría
     {
         get;
         set;
