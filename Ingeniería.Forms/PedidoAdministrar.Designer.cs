@@ -41,7 +41,7 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(26, 21);
+            this.dataGridView1.Location = new System.Drawing.Point(40, 3);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 25;
             this.dataGridView1.Size = new System.Drawing.Size(467, 150);
@@ -50,7 +50,7 @@
             // btnNuevo
             // 
             this.btnNuevo.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnNuevo.Location = new System.Drawing.Point(26, 194);
+            this.btnNuevo.Location = new System.Drawing.Point(40, 176);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(84, 28);
             this.btnNuevo.TabIndex = 10;
@@ -60,7 +60,7 @@
             // btnModificar
             // 
             this.btnModificar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnModificar.Location = new System.Drawing.Point(116, 194);
+            this.btnModificar.Location = new System.Drawing.Point(130, 176);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(95, 28);
             this.btnModificar.TabIndex = 10;
@@ -70,7 +70,7 @@
             // btnEliminar
             // 
             this.btnEliminar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnEliminar.Location = new System.Drawing.Point(217, 194);
+            this.btnEliminar.Location = new System.Drawing.Point(231, 176);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(84, 28);
             this.btnEliminar.TabIndex = 10;
@@ -80,7 +80,7 @@
             // btnGrabar
             // 
             this.btnGrabar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnGrabar.Location = new System.Drawing.Point(307, 194);
+            this.btnGrabar.Location = new System.Drawing.Point(321, 176);
             this.btnGrabar.Name = "btnGrabar";
             this.btnGrabar.Size = new System.Drawing.Size(84, 28);
             this.btnGrabar.TabIndex = 10;
@@ -90,7 +90,7 @@
             // btnVerDetallePedido
             // 
             this.btnVerDetallePedido.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnVerDetallePedido.Location = new System.Drawing.Point(344, 229);
+            this.btnVerDetallePedido.Location = new System.Drawing.Point(358, 211);
             this.btnVerDetallePedido.Name = "btnVerDetallePedido";
             this.btnVerDetallePedido.Size = new System.Drawing.Size(158, 28);
             this.btnVerDetallePedido.TabIndex = 10;
@@ -100,7 +100,7 @@
             // btnSalir
             // 
             this.btnSalir.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnSalir.Location = new System.Drawing.Point(26, 272);
+            this.btnSalir.Location = new System.Drawing.Point(40, 254);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(68, 28);
             this.btnSalir.TabIndex = 10;

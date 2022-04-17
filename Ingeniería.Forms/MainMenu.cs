@@ -27,7 +27,7 @@ namespace Ingeniería.Forms
         private void btnFrmRegistrarProducto_Click(object sender, EventArgs e)
         {
             this.Hide();
-            var fRP = new Pedido();
+            var fRP = new ProductoForm();
             fRP.Show();
         }
     }
