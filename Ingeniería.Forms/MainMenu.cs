@@ -16,5 +16,19 @@ namespace Ingeniería.Forms
         {
             InitializeComponent();
         }
+
+        private void btnFrmRegistrarPedido_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            var fP = new Pedido();
+            fP.Show();
+        }
+
+        private void btnFrmRegistrarProducto_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            var fRP = new Pedido();
+            fRP.Show();
+        }
     }
 }

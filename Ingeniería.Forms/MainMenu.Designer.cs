@@ -56,7 +56,6 @@
             this.groupBox1.Size = new System.Drawing.Size(571, 214);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "groupBox1";
             // 
             // btnFrmRegistrarPedido
             // 
@@ -67,6 +66,7 @@
             this.btnFrmRegistrarPedido.TabIndex = 0;
             this.btnFrmRegistrarPedido.Text = "Formulario Registrar Pedidos";
             this.btnFrmRegistrarPedido.UseVisualStyleBackColor = true;
+            this.btnFrmRegistrarPedido.Click += new System.EventHandler(this.btnFrmRegistrarPedido_Click);
             // 
             // btnSalir
             // 
@@ -87,8 +87,9 @@
             this.btnFrmRegistrarProducto.TabIndex = 0;
             this.btnFrmRegistrarProducto.Text = "Formulario Registrar Productos";
             this.btnFrmRegistrarProducto.UseVisualStyleBackColor = true;
+            this.btnFrmRegistrarProducto.Click += new System.EventHandler(this.btnFrmRegistrarProducto_Click);
             // 
-            // Login
+            // MainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -96,7 +97,7 @@
             this.ClientSize = new System.Drawing.Size(595, 298);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
-            this.Name = "Login";
+            this.Name = "MainMenu";
             this.Text = "+";
             this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
