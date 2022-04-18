@@ -93,9 +93,6 @@ namespace Ingeniería.Backend.Migrations
                     b.Property<DateTime>("Fecha")
                         .HasColumnType("TEXT");
 
-                    b.Property<int>("ProductId")
-                        .HasColumnType("INTEGER");
-
                     b.Property<int>("ReceiptId")
                         .HasColumnType("INTEGER");
 
@@ -132,7 +129,7 @@ namespace Ingeniería.Backend.Migrations
                     b.Property<string>("Nombre")
                         .HasColumnType("TEXT");
 
-                    b.Property<int?>("OrderId")
+                    b.Property<int>("PedidoId")
                         .HasColumnType("INTEGER");
 
                     b.Property<double>("Precio")
@@ -147,7 +144,7 @@ namespace Ingeniería.Backend.Migrations
 
                     b.HasIndex("CategoryId");
 
-                    b.HasIndex("OrderId");
+                    b.HasIndex("PedidoId");
 
                     b.ToTable("Productos", (string)null);
                 });
@@ -231,13 +228,17 @@ namespace Ingeniería.Backend.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Ingeniería.Backend.Modelos.Order", null)
-                        .WithMany("Producto")
-                        .HasForeignKey("OrderId");
+                    b.HasOne("Ingeniería.Backend.Modelos.Order", "Pedido")
+                        .WithMany("Productos")
+                        .HasForeignKey("PedidoId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Categoría");
 
                     b.Navigation("Marca");
+
+                    b.Navigation("Pedido");
                 });
 
             modelBuilder.Entity("Ingeniería.Backend.Modelos.Receipt", b =>
@@ -263,7 +264,7 @@ namespace Ingeniería.Backend.Migrations
                 {
                     b.Navigation("Comprobante");
 
-                    b.Navigation("Producto");
+                    b.Navigation("Productos");
                 });
 #pragma warning restore 612, 618
         }

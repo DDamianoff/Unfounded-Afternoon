@@ -49,7 +49,14 @@ public class Product
         get; 
         set;
     }
-    
+
+    public virtual ICollection<Order>? Pedidos
+
+    { 
+        get;
+        set;
+    }
+
     public double Precio 
     { 
         get; 
@@ -61,4 +68,6 @@ public class Product
         get;
         set;
     }
+
+    public override string ToString() => $"{Nombre}";
 }

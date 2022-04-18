@@ -18,17 +18,9 @@ public class Currency
     
     
     [NotMapped]
-    public static string Soles = nameof(Soles);
+    public static Currency Soles = new Currency() { Type = "PEN" };
     [NotMapped]
-    public static string Dólares = nameof(Dólares);
+    public static Currency Dólares = new Currency() { Type = "USD" };
     [NotMapped]
-    public static string Éuros = nameof(Éuros);
-    [NotMapped]
-    public static IEnumerable<string> AllCurrencyTypes { get; } 
-        = new List<String>
-        {
-            Soles,
-            Dólares,
-            Éuros
-        };
+    public static Currency Éuros = new Currency() { Type = "EUR" };
 }

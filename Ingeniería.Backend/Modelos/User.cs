@@ -24,4 +24,6 @@ public class User : ILogin
     
     public string Correo { get; set; }
     public string Contraseña { get; set; }
+
+    public override string ToString() => $"{Id}. {Nombre} {Apellido}";
 }

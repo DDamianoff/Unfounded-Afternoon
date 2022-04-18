@@ -22,13 +22,7 @@ public class Order
         set;
     }
     
-    public int ProductId
-    {
-        get;
-        set;
-    }
-    
-    public ICollection<Product>? Producto
+    public virtual ICollection<Product>? Productos
     {
         get;
         set;

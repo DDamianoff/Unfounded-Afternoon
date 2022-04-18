@@ -17,13 +17,13 @@ namespace Ingeniería.Forms
             InitializeComponent();
         }
 
-        public readonly PedidoCrear PedidoCrearVista = new ();
+        public readonly PedidoCrear PedidoCrearVista = new () { Dock = DockStyle.Fill };
 
         public readonly PedidoAdministrar PedidoAdministrarVista = new() { Dock = DockStyle.Fill };
 
         private void Pedido_Load(object sender, EventArgs e)
         {
-            panelPedidoCrear.Controls.Add(PedidoCrearVista);
+            panel3.Controls.Add(PedidoCrearVista);
             panelPedidoAdministrar.Controls.Add(PedidoAdministrarVista);
         }
     }
