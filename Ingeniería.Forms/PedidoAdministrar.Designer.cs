@@ -126,6 +126,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Name = "PedidoAdministrar";
             this.Size = new System.Drawing.Size(543, 283);
+            this.Load += new System.EventHandler(this.PedidoAdministrar_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 

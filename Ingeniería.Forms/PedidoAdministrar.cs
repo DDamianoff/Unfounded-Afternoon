@@ -48,5 +48,10 @@ namespace Ingeniería.Forms
         {
 
         }
+
+        private void PedidoAdministrar_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
