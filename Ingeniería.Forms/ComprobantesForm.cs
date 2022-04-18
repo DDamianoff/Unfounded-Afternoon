@@ -43,5 +43,16 @@ namespace Ingeniería.Forms
             txtDescuento.Text = "3%";
             txtTotal.Text = $"{(double)precio - (double)precio * 0.03}";
         }
+
+        private void btnImprimir_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show($"*** {Order.Comprobante.RazónSocial} ***\n" +
+                $"total: {txtMoneda.Text} {txtTotal.Text}\n" +
+                $"subtotal: {txtMoneda.Text} {txtTotal.Text} \n" +
+                $"vendedor {Order.Vendedor}\n" +
+                $"fecha: {Order.Fecha}\n" +
+                $"Gracias por su compra!");
+
+        }
     }
 }
