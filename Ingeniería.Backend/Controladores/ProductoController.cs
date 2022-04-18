@@ -9,14 +9,14 @@ namespace Ingeniería.Backend.Controladores
 {
     public class ProductoController
     {   
-        public IEnumerable<Category> GetListCategories()
+        public IEnumerable<Category?> GetListCategories()
         {
             using var dbcontext = new SqLiteDbContext();
 
             return dbcontext.Categorías.ToList();
         }
 
-        public IEnumerable<Brand> GetListBrands()
+        public IEnumerable<Brand?> GetListBrands()
         {
             using var dbcontext = new SqLiteDbContext();
 
@@ -48,6 +48,13 @@ namespace Ingeniería.Backend.Controladores
             using var db = new SqLiteDbContext();
 
             return db.Productos.First();
+        }
+
+        public IEnumerable<Product> GetAllProducts()
+        {
+            using var db = new SqLiteDbContext();
+
+            return db.Productos.AsEnumerable();
         }
     }
 }

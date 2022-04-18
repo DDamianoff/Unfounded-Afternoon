@@ -7,11 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Ingeniería.Backend.Controladores;
+using Ingeniería.Backend.Modelos;
 
 namespace Ingeniería.Forms
 {
     public partial class AdministrarProducto : UserControl
     {
+        private readonly ProductoController _controller = new();
         public AdministrarProducto()
         {
             InitializeComponent();
@@ -44,7 +47,8 @@ namespace Ingeniería.Forms
 
         private void AdministrarProducto_Load(object sender, EventArgs e)
         {
-
+            var products = _controller.GetAllProducts();
+            dataGridView1.DataSource = products;
         }
     }
 }

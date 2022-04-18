@@ -43,12 +43,12 @@ public class SqLiteDbContext : DbContext
         base.OnModelCreating(modelBuilder);
     }
     
-    public DbSet<Brand> Marcas
+    public DbSet<Brand?> Marcas
     {
         get;
         set;
     }
-    public DbSet<Category> Categorías
+    public DbSet<Category?> Categorías
     {
         get;
         set;

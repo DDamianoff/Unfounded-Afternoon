@@ -26,7 +26,7 @@ public class Product
         set;
     }
 
-    public Brand Marca
+    public Brand? Marca
     {
         get; 
         set;
@@ -38,7 +38,7 @@ public class Product
         set;
     }
 
-    public Category Categoría
+    public Category? Categoría
     {
         get; 
         set;

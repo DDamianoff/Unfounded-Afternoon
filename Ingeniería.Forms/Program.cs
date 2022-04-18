@@ -78,6 +78,37 @@ static class Program
         };
 
         db.Marcas.AddRange(marcas);
+
+        #endregion
+        
+        #region Añadir algunos productos
+
+        List<Product> products = new List<Product>()
+        {
+            new ()
+            {
+                Nombre = "Mouse LSD",
+                Categoría = db.Categorías.FirstOrDefault(categoria => categoria.Categoría == "Periféricos"),
+                Marca = db.Marcas.FirstOrDefault(marca => marca.Nombre == "LogiTech"),
+                Descripción = "Mouse gamer alta gama",
+                Stock = 30,
+                Precio = 49.50
+            },
+            new ()
+            {
+                Nombre = "Mouse De oficina",
+                Categoría = db.Categorías.FirstOrDefault(categoría => categoría.Categoría == "Periféricos"),
+                Marca = db.Marcas.FirstOrDefault(marca => marca.Nombre == "LogiTech"),
+                Descripción = "Mouse oficina alta gama inalámbrico",
+                Stock = 50,
+                Precio = 39.50
+            }
+            
+            
+        };
+        
+        db.Productos.AddRange(products);
+
         db.SaveChanges();
 
         #endregion
