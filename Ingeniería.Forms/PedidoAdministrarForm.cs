@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Ingeniería.Backend.Controladores;
+using Ingeniería.Backend.Modelos;
+
 
 namespace Ingeniería.Forms
 {
@@ -17,39 +20,21 @@ namespace Ingeniería.Forms
             InitializeComponent();
         }
 
+        private readonly PedidoController _controller = new PedidoController();
+
+        public List<Order> Orders;
+
         private void btnNuevo_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void btnModificar_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnEliminar_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnGrabar_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnVerDetallePedido_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Comprobantes FrmCom = new Comprobantes();
-            FrmCom.Focus();
-        }
-
-        private void btnSalir_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void PedidoAdministrar_Load(object sender, EventArgs e)
+        {
+            RecargarLista();
+        }
+
+        private void RecargarLista()
         {
 
         }
