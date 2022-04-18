@@ -9,8 +9,6 @@ public class SqLiteDbContext : DbContext
     {
         optionsBuilder.UseSqlite(connectionString: "Filename=db.sqlite", sqliteOptionsAction: options => options.MigrationsAssembly(Assembly.GetExecutingAssembly().FullName));
         
-        
-        
         base.OnConfiguring(optionsBuilder);
     }
 
