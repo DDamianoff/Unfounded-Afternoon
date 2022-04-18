@@ -106,9 +106,17 @@ static class Program
                 Stock = 50,
                 Precio = 39.50,
                 IsEnabled = true,
+            },
+            new ()
+            {
+                Nombre = "Mouse GAMERRRRRR",
+                Categoría = db.Categorías.First(categoría => categoría.Categoría == "Periféricos"),
+                Marca = db.Marcas.First(marca => marca.Nombre == "LogiTech"),
+                Descripción = "yes",
+                Stock = 50,
+                Precio = 39.50,
+                IsEnabled = true,
             }
-            
-            
         };
         
         db.Productos.AddRange(products);

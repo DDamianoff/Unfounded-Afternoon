@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using Ingeniería.Backend.Controladores;
 using Ingeniería.Backend.Modelos;
 using Microsoft.EntityFrameworkCore;
+using Ingeniería.Forms.Components;
 
 namespace Ingeniería.Forms
 {
@@ -17,48 +18,41 @@ namespace Ingeniería.Forms
     {
         private readonly ProductoController _controller = new();
 
-        public SqLiteDbContext db;
-
         public AdministrarProducto()
         {
             InitializeComponent();
-        }
-        
-        private void btnEliminar_Click(object sender, EventArgs e)
-        {
-
-            if (dataGridView1.SelectedRows.Count < 1)
-                return;
-
-            var test = dataGridView1.SelectedRows.Cast<Product>();
-            
-            // foreach (var row in dataGridView1.SelectedRows.Cast<DataGridViewRow>())
-            // {
-            //     row.Cells
-            // }
-
-            var result = db.SaveChanges();
-
-            if (result > 0)
-                MessageBox.Show($"Se eliminaron {result} productos exitosamente");
+            pnlListContainer.AutoScroll = true;
         }
 
-        private void btnGrabar_Click(object sender, EventArgs e)
-        {
-            var result = db.SaveChanges();
-
-            if (result > 0)
-                MessageBox.Show($"Se modificaron {result} productos exitosamente");
-        }
-
+        private List<Product> Products;
+        private List<ProductoUserControl> ProductoUserControls;
 
         private void AdministrarProducto_Load(object sender, EventArgs e)
         {
-            db = new SqLiteDbContext();
-            dataGridView1.DataSource = db.Productos.Include(producto => producto.Categoría)
-                .Include(producto => producto.Marca)
-                .Where(p => p.IsEnabled)
-                .ToList();
+            Products = new List<Product>();
+            ProductoUserControls = new List<ProductoUserControl>();
+
+            this.RecargarLista();
+        }
+
+        public void RecargarLista()
+        {
+            Products.Clear();
+            ProductoUserControls.Clear();
+            pnlListContainer.Controls.Clear();
+
+            Products = _controller.GetAllProducts().ToList();
+
+            foreach (var product in Products)
+                ProductoUserControls.Add(
+                    new ProductoUserControl(product)
+                    { 
+                        Dock = DockStyle.Top 
+                    });
+
+            foreach (var productView in ProductoUserControls)
+                pnlListContainer.Controls.Add(productView);
+
         }
     }
 }

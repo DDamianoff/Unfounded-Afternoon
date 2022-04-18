@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Ingeniería.Backend.Modelos;
+using Microsoft.EntityFrameworkCore;
 
 namespace Ingeniería.Backend.Controladores
 {
@@ -55,7 +56,11 @@ namespace Ingeniería.Backend.Controladores
         {
             using var db = new SqLiteDbContext();
 
-            return db.Productos.AsEnumerable().ToList();
+            return db.Productos
+                .Include(p => p.Categoría)
+                .Include(p => p.Marca)
+                .AsEnumerable()
+                .ToList();
         }
     }
 }
