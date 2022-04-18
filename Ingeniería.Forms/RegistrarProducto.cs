@@ -19,7 +19,7 @@ namespace Ingeniería.Forms
             InitializeComponent();
         }
 
-        public RegistrarProductoControler controler = new RegistrarProductoControler();
+        private readonly ProductoController _controller = new ();
 
         private void cboCategoria_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -28,12 +28,12 @@ namespace Ingeniería.Forms
 
         private void RegistrarProducto_Load(object sender, EventArgs e)
         {
-            var AllCategories = controler.GetListCategories();
+            var AllCategories = _controller.GetListCategories();
 
             foreach(var categoria in AllCategories)
                 cboCategoria.Items.Add(categoria);
 
-            var AllBrands = controler.GetListBrands();
+            var AllBrands = _controller.GetListBrands();
 
             foreach(var marca in AllBrands)
                 cboMarca.Items.Add(marca);
@@ -52,7 +52,7 @@ namespace Ingeniería.Forms
                 Stock = (int)nupStock.Value
             };
 
-            controler.SaveProductDb(product);
+            _controller.SaveProductDb(product);
         }
     }
 }

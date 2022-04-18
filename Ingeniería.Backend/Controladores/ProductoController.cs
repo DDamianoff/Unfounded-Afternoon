@@ -7,7 +7,7 @@ using Ingeniería.Backend.Modelos;
 
 namespace Ingeniería.Backend.Controladores
 {
-    public class RegistrarProductoControler
+    public class ProductoController
     {   
         public IEnumerable<Category> GetListCategories()
         {

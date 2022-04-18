@@ -11,9 +11,9 @@ public partial class LoginForm : Form
         InitializeComponent();
     }
 
-    public LoginControler controler = new LoginControler();
+    private readonly LoginControler _controller = new ();
 
-    private void validarLogin()
+    private void ValidarLogin()
     {
         var login = new Login()
         {
@@ -21,7 +21,7 @@ public partial class LoginForm : Form
             Contraseña = txtContraseña.Text
         };
 
-        var loginValidado = controler.ValidarLogin(login);
+        var loginValidado = _controller.ValidarLogin(login);
 
         if (loginValidado)
         {
@@ -36,6 +36,6 @@ public partial class LoginForm : Form
 
     private void btnIngresar_Click(object sender, EventArgs e)
     {
-        validarLogin();
+        ValidarLogin();
     }
 }

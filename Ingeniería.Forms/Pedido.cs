@@ -17,9 +17,9 @@ namespace Ingeniería.Forms
             InitializeComponent();
         }
 
-        public PedidoCrear PedidoCrearVista = new PedidoCrear();
+        public readonly PedidoCrear PedidoCrearVista = new ();
 
-        public PedidoAdministrar PedidoAdministrarVista = new PedidoAdministrar();
+        public readonly PedidoAdministrar PedidoAdministrarVista = new ();
 
         private void Pedido_Load(object sender, EventArgs e)
         {
