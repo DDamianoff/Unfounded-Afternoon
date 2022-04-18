@@ -1,4 +1,5 @@
 using Ingeniería.Backend.Modelos;
+using System;
 
 namespace Ingeniería.Forms;
 
@@ -123,5 +124,52 @@ static class Program
 
         db.SaveChanges();
         #endregion
+
+        #region Añadir algunos pedidos
+
+        List<Order> orders = new List<Order>
+        {
+            new Order{
+            Cliente = new Customer{Apellido = "Ramirez", Nombre = "Alberto"},
+            Estado = Order.Íntegro,
+            Fecha = DateTime.Now,
+            Productos = new List<Product>(),
+            Vendedor = db.Usuarios.First(),
+            Comprobante = new Receipt()
+                {
+                    Dirección = "Av. Garcilaso 1250",
+                    Moneda = Currency.Soles,
+                    RazónSocial = "Roger Store",
+                },
+
+            },
+            new Order{
+            Cliente = new Customer{Apellido = "Ramón", Nombre = "Orlando"},
+            Estado = Order.Íntegro,
+            Fecha = DateTime.Now,
+            Productos = db.Productos.ToList(),
+            Vendedor = db.Usuarios.First(),
+            Comprobante = new Receipt()
+                {
+                    Dirección = "Av. Garcilaso 1250",
+                    Moneda = Currency.Soles,
+                    RazónSocial = "Roger Store",
+                }
+            } 
+        };
+
+        foreach (var order in orders)
+        {
+            foreach (var product in db.Productos.AsEnumerable())
+                order.Productos.Add(product);
+            db.Pedidos.Add(order);
+        }
+
+        db.SaveChanges();
+        #endregion
+
     }
+
+
+    
 }

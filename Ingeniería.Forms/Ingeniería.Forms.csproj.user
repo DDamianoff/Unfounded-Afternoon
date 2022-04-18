@@ -7,6 +7,9 @@
     <Compile Update="Components\ProductoUserControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="ComprobantesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>

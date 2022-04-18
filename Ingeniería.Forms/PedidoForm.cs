@@ -24,7 +24,7 @@ namespace Ingeniería.Forms
         private void Pedido_Load(object sender, EventArgs e)
         {
             panel3.Controls.Add(PedidoCrearVista);
-            panelPedidoAdministrar.Controls.Add(PedidoAdministrarVista);
+            panel2.Controls.Add(PedidoAdministrarVista);
         }
     }
 }

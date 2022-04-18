@@ -29,26 +29,26 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txtRuc = new System.Windows.Forms.TextBox();
-            this.txtRazonSocial = new System.Windows.Forms.TextBox();
-            this.txtDireccion = new System.Windows.Forms.TextBox();
-            this.txtMoneda = new System.Windows.Forms.TextBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.txtDireccion = new System.Windows.Forms.TextBox();
+            this.txtRazonSocial = new System.Windows.Forms.TextBox();
+            this.txtMoneda = new System.Windows.Forms.TextBox();
+            this.txtRuc = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.lbProductos = new System.Windows.Forms.ListBox();
+            this.btnImprimir = new System.Windows.Forms.Button();
             this.txtTotal = new System.Windows.Forms.TextBox();
             this.txtDescuento = new System.Windows.Forms.TextBox();
             this.txtSubTotal = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.btnImprimir = new System.Windows.Forms.Button();
-            this.lbProductos = new System.Windows.Forms.ListBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -72,45 +72,47 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Informacion";
             // 
-            // label1
+            // dateTimePicker1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(5, 34);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(46, 21);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "RUC:";
+            this.dateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker1.Location = new System.Drawing.Point(406, 31);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(128, 29);
+            this.dateTimePicker1.TabIndex = 2;
             // 
-            // label2
+            // txtDireccion
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(5, 76);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(111, 21);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Razon Social:";
+            this.txtDireccion.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txtDireccion.Location = new System.Drawing.Point(116, 114);
+            this.txtDireccion.Name = "txtDireccion";
+            this.txtDireccion.Size = new System.Drawing.Size(235, 29);
+            this.txtDireccion.TabIndex = 1;
             // 
-            // label3
+            // txtRazonSocial
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(274, 73);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(77, 21);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Moneda:";
+            this.txtRazonSocial.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txtRazonSocial.Location = new System.Drawing.Point(116, 73);
+            this.txtRazonSocial.Name = "txtRazonSocial";
+            this.txtRazonSocial.Size = new System.Drawing.Size(152, 29);
+            this.txtRazonSocial.TabIndex = 1;
             // 
-            // label4
+            // txtMoneda
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(274, 34);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(123, 21);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "Fecha Emision:";
+            this.txtMoneda.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txtMoneda.Location = new System.Drawing.Point(406, 70);
+            this.txtMoneda.Name = "txtMoneda";
+            this.txtMoneda.Size = new System.Drawing.Size(128, 29);
+            this.txtMoneda.TabIndex = 1;
+            // 
+            // txtRuc
+            // 
+            this.txtRuc.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txtRuc.Location = new System.Drawing.Point(116, 31);
+            this.txtRuc.Name = "txtRuc";
+            this.txtRuc.Size = new System.Drawing.Size(152, 29);
+            this.txtRuc.TabIndex = 1;
+            this.txtRuc.Text = "10444488552";
             // 
             // label5
             // 
@@ -122,46 +124,45 @@
             this.label5.TabIndex = 0;
             this.label5.Text = "Direccion:";
             // 
-            // txtRuc
+            // label4
             // 
-            this.txtRuc.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.txtRuc.Location = new System.Drawing.Point(116, 31);
-            this.txtRuc.Name = "txtRuc";
-            this.txtRuc.Size = new System.Drawing.Size(152, 29);
-            this.txtRuc.TabIndex = 1;
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label4.Location = new System.Drawing.Point(274, 34);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(123, 21);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "Fecha Emision:";
             // 
-            // txtRazonSocial
+            // label3
             // 
-            this.txtRazonSocial.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.txtRazonSocial.Location = new System.Drawing.Point(116, 73);
-            this.txtRazonSocial.Name = "txtRazonSocial";
-            this.txtRazonSocial.Size = new System.Drawing.Size(152, 29);
-            this.txtRazonSocial.TabIndex = 1;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label3.Location = new System.Drawing.Point(274, 73);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(77, 21);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Moneda:";
             // 
-            // txtDireccion
+            // label2
             // 
-            this.txtDireccion.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.txtDireccion.Location = new System.Drawing.Point(116, 114);
-            this.txtDireccion.Name = "txtDireccion";
-            this.txtDireccion.Size = new System.Drawing.Size(235, 29);
-            this.txtDireccion.TabIndex = 1;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(5, 76);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(111, 21);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Razon Social:";
             // 
-            // txtMoneda
+            // label1
             // 
-            this.txtMoneda.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.txtMoneda.Location = new System.Drawing.Point(406, 70);
-            this.txtMoneda.Name = "txtMoneda";
-            this.txtMoneda.Size = new System.Drawing.Size(128, 29);
-            this.txtMoneda.TabIndex = 1;
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(406, 31);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(128, 29);
-            this.dateTimePicker1.TabIndex = 2;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(5, 34);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(46, 21);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "RUC:";
             // 
             // label6
             // 
@@ -189,6 +190,25 @@
             this.groupBox2.TabIndex = 0;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Informacion";
+            // 
+            // lbProductos
+            // 
+            this.lbProductos.FormattingEnabled = true;
+            this.lbProductos.ItemHeight = 15;
+            this.lbProductos.Location = new System.Drawing.Point(13, 32);
+            this.lbProductos.Name = "lbProductos";
+            this.lbProductos.Size = new System.Drawing.Size(521, 199);
+            this.lbProductos.TabIndex = 3;
+            // 
+            // btnImprimir
+            // 
+            this.btnImprimir.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnImprimir.Location = new System.Drawing.Point(421, 299);
+            this.btnImprimir.Name = "btnImprimir";
+            this.btnImprimir.Size = new System.Drawing.Size(103, 33);
+            this.btnImprimir.TabIndex = 2;
+            this.btnImprimir.Text = "Imprimir";
+            this.btnImprimir.UseVisualStyleBackColor = true;
             // 
             // txtTotal
             // 
@@ -244,25 +264,6 @@
             this.label11.TabIndex = 0;
             this.label11.Text = "SubTotal:";
             // 
-            // btnImprimir
-            // 
-            this.btnImprimir.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnImprimir.Location = new System.Drawing.Point(421, 299);
-            this.btnImprimir.Name = "btnImprimir";
-            this.btnImprimir.Size = new System.Drawing.Size(103, 33);
-            this.btnImprimir.TabIndex = 2;
-            this.btnImprimir.Text = "Imprimir";
-            this.btnImprimir.UseVisualStyleBackColor = true;
-            // 
-            // lbProductos
-            // 
-            this.lbProductos.FormattingEnabled = true;
-            this.lbProductos.ItemHeight = 15;
-            this.lbProductos.Location = new System.Drawing.Point(13, 32);
-            this.lbProductos.Name = "lbProductos";
-            this.lbProductos.Size = new System.Drawing.Size(521, 199);
-            this.lbProductos.TabIndex = 3;
-            // 
             // ComprobantesForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -274,6 +275,7 @@
             this.Controls.Add(this.label6);
             this.Name = "ComprobantesForm";
             this.Text = "ComprobantesForm";
+            this.Load += new System.EventHandler(this.ComprobantesForm_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);

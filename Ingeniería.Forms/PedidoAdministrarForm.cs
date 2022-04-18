@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Ingeniería.Backend.Controladores;
 using Ingeniería.Backend.Modelos;
-
+using Ingeniería.Forms.Components;
 
 namespace Ingeniería.Forms
 {
@@ -22,7 +22,9 @@ namespace Ingeniería.Forms
 
         private readonly PedidoController _controller = new PedidoController();
 
-        public List<Order> Orders;
+        public List<Order> Orders = new List<Order>();
+
+        public List<PedidoUserControl> OrderViews = new List<PedidoUserControl>();
 
         private void btnNuevo_Click(object sender, EventArgs e)
         {
@@ -34,8 +36,20 @@ namespace Ingeniería.Forms
             RecargarLista();
         }
 
-        private void RecargarLista()
+        public void RecargarLista()
         {
+            Orders.Clear();
+            OrderViews.Clear();
+            pnlContainer.Controls.Clear();
+
+            Orders = _controller.GetAllOrders().ToList();
+
+
+            foreach (var order in Orders)
+                OrderViews.Add(new PedidoUserControl(order));
+
+            foreach (var oview in OrderViews)
+                pnlContainer.Controls.Add(oview);
 
         }
     }
