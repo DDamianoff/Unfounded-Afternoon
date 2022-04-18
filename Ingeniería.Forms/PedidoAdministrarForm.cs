@@ -46,7 +46,7 @@ namespace Ingeniería.Forms
 
 
             foreach (var order in Orders)
-                OrderViews.Add(new PedidoUserControl(order));
+                OrderViews.Add(new PedidoUserControl(order) { Dock = DockStyle.Top });
 
             foreach (var oview in OrderViews)
                 pnlContainer.Controls.Add(oview);

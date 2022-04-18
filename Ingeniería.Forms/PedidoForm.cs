@@ -15,6 +15,7 @@ namespace Ingeniería.Forms
         public Pedido()
         {
             InitializeComponent();
+            panel2.AutoScroll = true;
         }
 
         public readonly PedidoCrear PedidoCrearVista = new () { Dock = DockStyle.Fill };
