@@ -24,7 +24,6 @@ namespace Ingeniería.Backend.Migrations
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("Nombre")
-                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.HasKey("Id");
@@ -39,7 +38,6 @@ namespace Ingeniería.Backend.Migrations
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("Categoría")
-                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.HasKey("Id");
@@ -54,7 +52,6 @@ namespace Ingeniería.Backend.Migrations
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("Type")
-                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.HasKey("Id");
@@ -91,7 +88,6 @@ namespace Ingeniería.Backend.Migrations
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("Estado")
-                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<DateTime>("Fecha")
@@ -103,7 +99,7 @@ namespace Ingeniería.Backend.Migrations
                     b.Property<int>("ReceiptId")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("VendedorId")
+                    b.Property<int?>("VendedorId")
                         .HasColumnType("INTEGER");
 
                     b.HasKey("Id");
@@ -128,11 +124,12 @@ namespace Ingeniería.Backend.Migrations
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("Descripción")
-                        .IsRequired()
                         .HasColumnType("TEXT");
 
+                    b.Property<bool>("IsEnabled")
+                        .HasColumnType("INTEGER");
+
                     b.Property<string>("Nombre")
-                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<int?>("OrderId")
@@ -152,7 +149,7 @@ namespace Ingeniería.Backend.Migrations
 
                     b.HasIndex("OrderId");
 
-                    b.ToTable("Product");
+                    b.ToTable("Productos", (string)null);
                 });
 
             modelBuilder.Entity("Ingeniería.Backend.Modelos.Receipt", b =>
@@ -164,11 +161,9 @@ namespace Ingeniería.Backend.Migrations
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("Dirección")
-                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<string>("RazónSocial")
-                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.HasKey("ReceiptId");
@@ -215,9 +210,7 @@ namespace Ingeniería.Backend.Migrations
 
                     b.HasOne("Ingeniería.Backend.Modelos.User", "Vendedor")
                         .WithMany()
-                        .HasForeignKey("VendedorId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("VendedorId");
 
                     b.Navigation("Cliente");
 
@@ -268,8 +261,7 @@ namespace Ingeniería.Backend.Migrations
 
             modelBuilder.Entity("Ingeniería.Backend.Modelos.Order", b =>
                 {
-                    b.Navigation("Comprobante")
-                        .IsRequired();
+                    b.Navigation("Comprobante");
 
                     b.Navigation("Producto");
                 });
