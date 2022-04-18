@@ -27,5 +27,10 @@ namespace Ingeniería.Forms
             panel3.Controls.Add(PedidoCrearVista);
             panel2.Controls.Add(PedidoAdministrarVista);
         }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            PedidoAdministrarVista.RecargarLista();
+        }
     }
 }

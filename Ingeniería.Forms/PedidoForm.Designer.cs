@@ -32,16 +32,16 @@
             this.btnSalir = new System.Windows.Forms.Button();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.panelPedidoAdministrar = new System.Windows.Forms.Panel();
-            this.panelPedidoCrear = new System.Windows.Forms.Panel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.panelPedidoAdministrar = new System.Windows.Forms.Panel();
+            this.panelPedidoCrear = new System.Windows.Forms.Panel();
             this.tableLayoutPanel2.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
+            this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -63,8 +63,9 @@
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(183, 32);
             this.btnSalir.TabIndex = 22;
-            this.btnSalir.Text = "Salir";
+            this.btnSalir.Text = "Recargar";
             this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // tableLayoutPanel2
             // 
@@ -89,33 +90,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(757, 690);
             this.panel1.TabIndex = 24;
-            // 
-            // tableLayoutPanel1
-            // 
-            this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Controls.Add(this.panelPedidoAdministrar, 1, 0);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 1;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(200, 100);
-            this.tableLayoutPanel1.TabIndex = 0;
-            // 
-            // panelPedidoAdministrar
-            // 
-            this.panelPedidoAdministrar.Location = new System.Drawing.Point(103, 3);
-            this.panelPedidoAdministrar.Name = "panelPedidoAdministrar";
-            this.panelPedidoAdministrar.Size = new System.Drawing.Size(94, 94);
-            this.panelPedidoAdministrar.TabIndex = 1;
-            // 
-            // panelPedidoCrear
-            // 
-            this.panelPedidoCrear.Location = new System.Drawing.Point(3, 3);
-            this.panelPedidoCrear.Name = "panelPedidoCrear";
-            this.panelPedidoCrear.Size = new System.Drawing.Size(94, 342);
-            this.panelPedidoCrear.TabIndex = 0;
             // 
             // tableLayoutPanel3
             // 
@@ -149,6 +123,33 @@
             this.panel3.Size = new System.Drawing.Size(372, 684);
             this.panel3.TabIndex = 0;
             // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.ColumnCount = 2;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.Controls.Add(this.panelPedidoAdministrar, 1, 0);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 1;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(200, 100);
+            this.tableLayoutPanel1.TabIndex = 0;
+            // 
+            // panelPedidoAdministrar
+            // 
+            this.panelPedidoAdministrar.Location = new System.Drawing.Point(103, 3);
+            this.panelPedidoAdministrar.Name = "panelPedidoAdministrar";
+            this.panelPedidoAdministrar.Size = new System.Drawing.Size(94, 94);
+            this.panelPedidoAdministrar.TabIndex = 1;
+            // 
+            // panelPedidoCrear
+            // 
+            this.panelPedidoCrear.Location = new System.Drawing.Point(3, 3);
+            this.panelPedidoCrear.Name = "panelPedidoCrear";
+            this.panelPedidoCrear.Size = new System.Drawing.Size(94, 342);
+            this.panelPedidoCrear.TabIndex = 0;
+            // 
             // Pedido
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -163,8 +164,8 @@
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
             this.panel1.ResumeLayout(false);
-            this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
+            this.tableLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
