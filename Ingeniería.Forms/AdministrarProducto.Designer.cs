@@ -125,6 +125,7 @@
             this.Controls.Add(this.groupBox2);
             this.Name = "AdministrarProducto";
             this.Size = new System.Drawing.Size(562, 301);
+            this.Load += new System.EventHandler(this.AdministrarProducto_Load);
             this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

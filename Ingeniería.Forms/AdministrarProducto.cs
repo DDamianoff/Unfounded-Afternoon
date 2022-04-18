@@ -41,5 +41,10 @@ namespace Ingeniería.Forms
         {
 
         }
+
+        private void AdministrarProducto_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
