@@ -38,7 +38,7 @@ public class Product
         set;
     }
 
-    public Category? Categoría
+    public Category Categoría
     {
         get; 
         set;

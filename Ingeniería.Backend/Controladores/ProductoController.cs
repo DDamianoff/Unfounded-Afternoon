@@ -54,7 +54,7 @@ namespace Ingeniería.Backend.Controladores
         {
             using var db = new SqLiteDbContext();
 
-            return db.Productos.AsEnumerable();
+            return db.Productos.AsEnumerable().ToList();
         }
     }
 }

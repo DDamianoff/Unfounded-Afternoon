@@ -48,7 +48,22 @@ namespace Ingeniería.Forms
         private void AdministrarProducto_Load(object sender, EventArgs e)
         {
             var products = _controller.GetAllProducts();
-            dataGridView1.DataSource = products;
+            
+            
+            foreach (var product in products)
+            {
+                var n = dataGridView1.Rows.Add();
+                var m = 0;
+                
+                dataGridView1.Rows[n].Cells[m++].Value = product.Id;
+                dataGridView1.Rows[n].Cells[m++].Value = product.Stock;
+                dataGridView1.Rows[n].Cells[m++].Value = product.Nombre;
+                dataGridView1.Rows[n].Cells[m++].Value = product.Marca?.Nombre;
+                dataGridView1.Rows[n].Cells[m++].Value = product.Categoría.Categoría;
+                dataGridView1.Rows[n].Cells[m++].Value = product.Descripción;
+                dataGridView1.Rows[n].Cells[m++].Value = product.Precio;
+                
+            }
         }
     }
 }

@@ -83,13 +83,15 @@ static class Program
         
         #region Añadir algunos productos
 
+        db.SaveChanges();
+
         List<Product> products = new List<Product>()
         {
             new ()
             {
                 Nombre = "Mouse LSD",
-                Categoría = db.Categorías.FirstOrDefault(categoria => categoria.Categoría == "Periféricos"),
-                Marca = db.Marcas.FirstOrDefault(marca => marca.Nombre == "LogiTech"),
+                Categoría = db.Categorías.First(categoria => categoria.Categoría == "Periféricos"),
+                Marca = db.Marcas.First(marca => marca.Nombre == "LogiTech"),
                 Descripción = "Mouse gamer alta gama",
                 Stock = 30,
                 Precio = 49.50
@@ -97,8 +99,8 @@ static class Program
             new ()
             {
                 Nombre = "Mouse De oficina",
-                Categoría = db.Categorías.FirstOrDefault(categoría => categoría.Categoría == "Periféricos"),
-                Marca = db.Marcas.FirstOrDefault(marca => marca.Nombre == "LogiTech"),
+                Categoría = db.Categorías.First(categoría => categoría.Categoría == "Periféricos"),
+                Marca = db.Marcas.First(marca => marca.Nombre == "LogiTech"),
                 Descripción = "Mouse oficina alta gama inalámbrico",
                 Stock = 50,
                 Precio = 39.50
