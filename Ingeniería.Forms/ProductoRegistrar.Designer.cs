@@ -1,6 +1,6 @@
 ﻿namespace Ingeniería.Forms
 {
-    partial class RegistrarProducto
+    partial class ProductoRegistrar
     {
         /// <summary> 
         /// Variable del diseñador necesaria.
@@ -215,14 +215,14 @@
             this.nupPrecio.Size = new System.Drawing.Size(120, 29);
             this.nupPrecio.TabIndex = 22;
             // 
-            // RegistrarProducto
+            // ProductoRegistrar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
-            this.Name = "RegistrarProducto";
+            this.Name = "ProductoRegistrar";
             this.Size = new System.Drawing.Size(541, 397);
             this.Load += new System.EventHandler(this.RegistrarProducto_Load);
             this.groupBox1.ResumeLayout(false);

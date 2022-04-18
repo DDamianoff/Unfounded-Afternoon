@@ -12,9 +12,9 @@ using Ingeniería.Backend.Modelos;
 
 namespace Ingeniería.Forms
 {
-    public partial class RegistrarProducto : UserControl
+    public partial class ProductoRegistrar : UserControl
     {
-        public RegistrarProducto()
+        public ProductoRegistrar()
         {
             InitializeComponent();
         }

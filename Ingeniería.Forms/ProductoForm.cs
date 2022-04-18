@@ -18,13 +18,13 @@ namespace Ingeniería.Forms
         }
 
 
-        public RegistrarProducto RegistrarProductoVista= new RegistrarProducto();
+        public ProductoRegistrar ProductoRegistrarVista= new ProductoRegistrar();
 
         public AdministrarProducto administrarProductoVista = new AdministrarProducto();
 
         private void ProductoForm_Load(object sender, EventArgs e)
         {
-            panelRegistrarProducto.Controls.Add(RegistrarProductoVista);
+            panelRegistrarProducto.Controls.Add(ProductoRegistrarVista);
             panelAdministrarProducto.Controls.Add(administrarProductoVista);
         }
     }
