@@ -7,7 +7,7 @@
         <UseWindowsForms>true</UseWindowsForms>
         <ImplicitUsings>enable</ImplicitUsings>
     </PropertyGroup>
-
+    <!--
     <ItemGroup>
       <Compile Update="Properties\Resources.Designer.cs">
         <DesignTime>True</DesignTime>
@@ -22,7 +22,7 @@
         <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       </EmbeddedResource>
     </ItemGroup>
-
+    -->
     <ItemGroup>
       <ProjectReference Include="..\Ingeniería.Backend\Ingeniería.Backend.csproj" />
     </ItemGroup>

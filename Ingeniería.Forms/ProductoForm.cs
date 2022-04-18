@@ -18,14 +18,21 @@ namespace Ingeniería.Forms
         }
 
 
-        public ProductoRegistrar ProductoRegistrarVista= new ProductoRegistrar();
+        public ProductoRegistrar ProductoRegistrarVista= new ProductoRegistrar()
+        { Dock = DockStyle.Fill };
 
-        public AdministrarProducto administrarProductoVista = new AdministrarProducto();
+        public AdministrarProducto administrarProductoVista = new AdministrarProducto()
+        { Dock = DockStyle.Fill };
 
-        private void ProductoForm_Load(object sender, EventArgs e)
+    private void ProductoForm_Load(object sender, EventArgs e)
         {
             panelRegistrarProducto.Controls.Add(ProductoRegistrarVista);
             panelAdministrarProducto.Controls.Add(administrarProductoVista);
+        }
+
+        private void ProductoForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            administrarProductoVista.db.Dispose();
         }
     }
 }

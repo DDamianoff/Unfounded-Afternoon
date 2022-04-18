@@ -14,7 +14,7 @@ public class Product
         set;
     }
     
-    public string Nombre
+    public string? Nombre
     {
         get; 
         set;
@@ -38,13 +38,13 @@ public class Product
         set;
     }
 
-    public Category Categoría
+    public Category? Categoría
     {
         get; 
         set;
     }
 
-    public string Descripción
+    public string? Descripción
     {
         get; 
         set;
@@ -53,6 +53,12 @@ public class Product
     public double Precio 
     { 
         get; 
+        set;
+    }
+
+    public bool IsEnabled
+    {
+        get;
         set;
     }
 }

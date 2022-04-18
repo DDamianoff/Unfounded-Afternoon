@@ -16,7 +16,7 @@ public class Order
         set;
     }
 
-    public Customer Cliente
+    public Customer? Cliente
     {
         get;
         set;
@@ -28,7 +28,7 @@ public class Order
         set;
     }
     
-    public ICollection<Product> Producto
+    public ICollection<Product>? Producto
     {
         get;
         set;
@@ -40,19 +40,19 @@ public class Order
         set;
     }
     
-    public Receipt Comprobante
+    public Receipt? Comprobante
     {
         get;
         set;
     }
 
-    public string Estado
+    public string? Estado
     {
         get;
         set;
     }
 
-    public User Vendedor
+    public User? Vendedor
     {
         get;
         set;

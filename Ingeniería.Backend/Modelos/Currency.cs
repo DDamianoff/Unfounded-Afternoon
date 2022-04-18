@@ -10,7 +10,7 @@ public class Currency
         set;
     }
 
-    public string Type
+    public string? Type
     {
         get;
         set;

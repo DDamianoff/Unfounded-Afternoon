@@ -8,7 +8,7 @@ public class Brand
         set;
     }
 
-    public string Nombre
+    public string? Nombre
     {
         get;
         set;

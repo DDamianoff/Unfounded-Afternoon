@@ -19,7 +19,7 @@ namespace Ingeniería.Forms
 
         public readonly PedidoCrear PedidoCrearVista = new ();
 
-        public readonly PedidoAdministrar PedidoAdministrarVista = new ();
+        public readonly PedidoAdministrar PedidoAdministrarVista = new() { Dock = DockStyle.Fill };
 
         private void Pedido_Load(object sender, EventArgs e)
         {

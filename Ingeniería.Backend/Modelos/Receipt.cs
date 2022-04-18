@@ -31,19 +31,19 @@ public class Receipt
         set;
     }
 
-    public string Dirección
+    public string? Dirección
     {
         get;
         set;
     }
 
-    public string RazónSocial
+    public string? RazónSocial
     {
         get;
         set;
     }
 
-    public Order Order
+    public Order? Order
     {
         get;
         set;

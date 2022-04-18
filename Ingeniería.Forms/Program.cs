@@ -94,7 +94,8 @@ static class Program
                 Marca = db.Marcas.First(marca => marca.Nombre == "LogiTech"),
                 Descripción = "Mouse gamer alta gama",
                 Stock = 30,
-                Precio = 49.50
+                Precio = 49.50,
+                IsEnabled = true,
             },
             new ()
             {
@@ -103,7 +104,8 @@ static class Program
                 Marca = db.Marcas.First(marca => marca.Nombre == "LogiTech"),
                 Descripción = "Mouse oficina alta gama inalámbrico",
                 Stock = 50,
-                Precio = 39.50
+                Precio = 39.50,
+                IsEnabled = true,
             }
             
             

@@ -20,15 +20,17 @@ namespace Ingeniería.Forms
         private void btnFrmRegistrarPedido_Click(object sender, EventArgs e)
         {
             this.Hide();
-            var fP = new Pedido();
-            fP.Show();
+            var PedidoForm = new Pedido();
+            PedidoForm.Closed += (_, _) => this.Show(); 
+            PedidoForm.Show();
         }
 
         private void btnFrmRegistrarProducto_Click(object sender, EventArgs e)
         {
             this.Hide();
-            var fRP = new ProductoForm();
-            fRP.Show();
+            var productoForm = new ProductoForm();
+            productoForm.Closed += (_, _) => this.Show(); 
+            productoForm.Show();
         }
     }
 }

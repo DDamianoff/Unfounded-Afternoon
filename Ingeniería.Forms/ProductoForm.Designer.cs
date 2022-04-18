@@ -48,18 +48,17 @@
             // 
             // tableLayoutPanel1
             // 
-            this.tableLayoutPanel1.ColumnCount = 1;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.ColumnCount = 2;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.Controls.Add(this.panelRegistrarProducto, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.panelAdministrarProducto, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.panelAdministrarProducto, 1, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 45);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 2;
+            this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(546, 568);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(920, 571);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
             // panelRegistrarProducto
@@ -67,15 +66,15 @@
             this.panelRegistrarProducto.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelRegistrarProducto.Location = new System.Drawing.Point(3, 3);
             this.panelRegistrarProducto.Name = "panelRegistrarProducto";
-            this.panelRegistrarProducto.Size = new System.Drawing.Size(540, 278);
+            this.panelRegistrarProducto.Size = new System.Drawing.Size(454, 565);
             this.panelRegistrarProducto.TabIndex = 0;
             // 
             // panelAdministrarProducto
             // 
             this.panelAdministrarProducto.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelAdministrarProducto.Location = new System.Drawing.Point(3, 287);
+            this.panelAdministrarProducto.Location = new System.Drawing.Point(463, 3);
             this.panelAdministrarProducto.Name = "panelAdministrarProducto";
-            this.panelAdministrarProducto.Size = new System.Drawing.Size(540, 278);
+            this.panelAdministrarProducto.Size = new System.Drawing.Size(454, 565);
             this.panelAdministrarProducto.TabIndex = 1;
             // 
             // ProductoForm
@@ -83,11 +82,12 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Salmon;
-            this.ClientSize = new System.Drawing.Size(546, 613);
+            this.ClientSize = new System.Drawing.Size(920, 616);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.label1);
             this.Name = "ProductoForm";
             this.Text = "ProductoForm";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.ProductoForm_FormClosed);
             this.Load += new System.EventHandler(this.ProductoForm_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);

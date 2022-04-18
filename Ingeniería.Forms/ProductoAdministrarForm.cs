@@ -9,61 +9,56 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Ingeniería.Backend.Controladores;
 using Ingeniería.Backend.Modelos;
+using Microsoft.EntityFrameworkCore;
 
 namespace Ingeniería.Forms
 {
     public partial class AdministrarProducto : UserControl
     {
         private readonly ProductoController _controller = new();
+
+        public SqLiteDbContext db;
+
         public AdministrarProducto()
         {
             InitializeComponent();
         }
-
-        private void btnNuevo_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnModificar_Click(object sender, EventArgs e)
-        {
-
-        }
-
+        
         private void btnEliminar_Click(object sender, EventArgs e)
         {
 
+            if (dataGridView1.SelectedRows.Count < 1)
+                return;
+
+            var test = dataGridView1.SelectedRows.Cast<Product>();
+            
+            // foreach (var row in dataGridView1.SelectedRows.Cast<DataGridViewRow>())
+            // {
+            //     row.Cells
+            // }
+
+            var result = db.SaveChanges();
+
+            if (result > 0)
+                MessageBox.Show($"Se eliminaron {result} productos exitosamente");
         }
 
         private void btnGrabar_Click(object sender, EventArgs e)
         {
+            var result = db.SaveChanges();
 
+            if (result > 0)
+                MessageBox.Show($"Se modificaron {result} productos exitosamente");
         }
 
-        private void btnSalir_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void AdministrarProducto_Load(object sender, EventArgs e)
         {
-            var products = _controller.GetAllProducts();
-            
-            
-            foreach (var product in products)
-            {
-                var n = dataGridView1.Rows.Add();
-                var m = 0;
-                
-                dataGridView1.Rows[n].Cells[m++].Value = product.Id;
-                dataGridView1.Rows[n].Cells[m++].Value = product.Stock;
-                dataGridView1.Rows[n].Cells[m++].Value = product.Nombre;
-                dataGridView1.Rows[n].Cells[m++].Value = product.Marca?.Nombre;
-                dataGridView1.Rows[n].Cells[m++].Value = product.Categoría.Categoría;
-                dataGridView1.Rows[n].Cells[m++].Value = product.Descripción;
-                dataGridView1.Rows[n].Cells[m++].Value = product.Precio;
-                
-            }
+            db = new SqLiteDbContext();
+            dataGridView1.DataSource = db.Productos.Include(producto => producto.Categoría)
+                .Include(producto => producto.Marca)
+                .Where(p => p.IsEnabled)
+                .ToList();
         }
     }
 }

@@ -26,8 +26,9 @@ public partial class LoginForm : Form
         if (loginValidado)
         {
             this.Hide();
-            var fMM = new MainMenu();
-            fMM.Show();
+            var menu = new MainMenu();
+            menu.Closed += (_, _) => Close();
+            menu.Show();
             return;            
         }
 
